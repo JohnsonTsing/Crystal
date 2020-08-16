@@ -13,13 +13,13 @@ The Crystal TTS engine provides an implementation of a unified framework for mul
 ### Reference
 Please use [the following paper](http://www1.se.cuhk.edu.hk/~hccl/publications/pub/2035_Unified%20Framework.pdf) for reference to this project:
 
-- Zhiyong WU, Guangqi CAO, Helen MENG, Lianhong CAI, "**A Unified Framework for Multilingual Text-to-Speech Synthesis with SSML Specification as Interface**," Tsinghua Science and Technology, vol. 14, no. 5, pp. 623-630, October 2009.
+- Zhiyong WU, Guangqi CAO, Helen MENG, Lianhong CAI, "A Unified Framework for Multilingual Text-to-Speech Synthesis with SSML Specification as Interface," *Tsinghua Science and Technology*, vol. 14, no. 5, pp. 623-630, October 2009.
 
 ### Support of Dynamic Module Loading & Cross-platform
 
 The framework provides the support of dynamic module loading on different platforms.
 
-You can implement different algorithms for each module and compile as a new dynamic library (.dll on Windows, .so on Linux platform).  The backbone of the framework **cst::tts::base::CTextParser** (ttsbase/tts.text/tts_textparser) and **cst::tts::base::CSynthesizer** (ttsbase/tts.synth/tts_synthesizer) will automatically load the modules specified by an XML based configuration file.  In this way, the framework provides the flexibility in switching between different TTS engines or algorithms.
+You can implement different algorithms for each module and compile as a new dynamic library (.dll on Windows, .so on Linux platform).  The backbone of the framework **cst::tts::base::CTextParser** (*ttsbase/tts.text/tts_textparser*) and **cst::tts::base::CSynthesizer** (*ttsbase/tts.synth/tts_synthesizer*) will automatically load the modules specified by an XML based configuration file.  In this way, the framework provides the flexibility in switching between different TTS engines or algorithms.
 
 <p align="center">
   <img src="./document/docs/dynamic_module_loading.png"/>
