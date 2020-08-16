@@ -5,7 +5,7 @@ C++ implementation of Crystal Text-to-Speech (TTS) engine.
 The Crystal TTS engine provides an implementation of a unified framework for multilingual TTS synthesis engine – Crystal.  The unified framework defines the common TTS modules for different languages and/or dialects.  The interfaces between consecutive modules conform to Speech Synthesis Markup Language (SSML) specification for standardization, in-teroperability, multilinguality, and extensibility.
 
 <p align="center">
-  <img src="./document/docs/architecture.png"/>
+  <img src="./document/docs/architecture.svg"/>
 </p>
 
 Please use [the following paper](http://www1.se.cuhk.edu.hk/~hccl/publications/pub/2035_Unified%20Framework.pdf) for reference to this project:
