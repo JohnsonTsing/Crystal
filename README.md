@@ -22,7 +22,7 @@ The framework uses Speech Synthesis Markup Language (SSML) specification as inte
 Meanwhile, the framework provides **cst::xml::CSSMLTraversal** (*xml/ssml_traversal*) to convert the SSML document into internal data structure for convenient processing.  This means you actually donot need to take care of the complex parsing procedures of SSML document when implementing your own algorithms.  What you need to do is just to implement your algorithms by overriding the functions with internal data structures for the modules in **cst::tts::base::***.
 
 <p align="center">
-  <img width="700" src="./document/docs/ssml_interface.png"/>
+  <img width="500" src="./document/docs/ssml_interface.png"/>
 </p> 
 
 ### Support of Dynamic Module Loading & Cross-platform
@@ -43,7 +43,7 @@ For example, the above left figure shows Concatenative Putonghua TTS engine runn
 You can implement different TTS engines for different languages by overriding the TTSBase moduels in **cst::tts::base::***.  The following figure depicts the multilingual support of the architecture.
 
 <p align="center">
-  <img width="696" src="./document/docs/interface.png"/>
+  <img width="500" src="./document/docs/interface.png"/>
 </p> 
 
 
