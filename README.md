@@ -17,7 +17,9 @@ Please use [the following paper](http://www1.se.cuhk.edu.hk/~hccl/publications/p
 
 ### Support of Dynamic Module Loading & Cross-platform
 
-The framework provides the support of dynamic module loading.  You can implement different algorithms for each module of the above architecture, and compile it as a new dynamic library (.dll on Windows, or .so on Linux platform).  The backbone of the framework cst::tts::base::CTextParser (ttsbase/tts.text/tts_textparser) and cst::tts::base::CSynthesizer (ttsbase/tts.synth/tts_synthesizer) will automatically load the modules specified by an XML based configuration file.  In this way, the framework provides the flexibility in switching between different TTS engines or algorithms.
+The framework provides the support of dynamic module loading on different platforms.
+
+You can implement different algorithms for each module and compile as a new dynamic library (.dll on Windows, .so on Linux platform).  The backbone of the framework **cst::tts::base::CTextParser** (ttsbase/tts.text/tts_textparser) and **cst::tts::base::CSynthesizer** (ttsbase/tts.synth/tts_synthesizer) will automatically load the modules specified by an XML based configuration file.  In this way, the framework provides the flexibility in switching between different TTS engines or algorithms.
 
 <p align="center">
   <img src="./document/docs/dynamic_module_loading.png"/>
@@ -28,7 +30,7 @@ For example, the above left figure shows Concatenative Putonghua TTS engine runn
 
 ### Support of Multilingual TTS Engine
 
-You can implement different TTS engines for different languages by overriding the TTSBase moduels in cst::tts::base::*.  The following figure depicts the multilingual support of the architecture.
+You can implement different TTS engines for different languages by overriding the TTSBase moduels in **cst::tts::base::***.  The following figure depicts the multilingual support of the architecture.
 
 <p align="center">
   <img src="./document/docs/interface.png"/>
