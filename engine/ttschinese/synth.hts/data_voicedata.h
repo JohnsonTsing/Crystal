@@ -45,17 +45,9 @@ namespace cst
             {
             public:
                 ///
-                ///	@brief  Get the HTS synthesizer for HMM based speech synthesis
+                /// @brief  Get the HTS synthesizer for HMM based speech synthesis
                 ///
-                const CHtsSynthesizer &getHtsSynthesizer() const
-                {
-                    return m_htsSynthesizer;
-                }
-
-                ///
-                /// @brief  Get the speech library interface of HTS synthesizer
-                ///
-                virtual const CHtsSynthesizer &getSpeechLib() const
+                virtual const CHtsSynthesizer &getWavSynthesizer() const
                 {
                     return m_htsSynthesizer;
                 }

@@ -52,7 +52,7 @@ namespace cst
 
                 // synthesize speech with HTS engine
                 const CVoiceData *dataManager = base::CSynthesize::getDataManager<CVoiceData>();
-                hts::CHtsSynthesizer *htsEngine = (hts::CHtsSynthesizer*)&(dataManager->getHtsSynthesizer());
+                hts::CHtsSynthesizer *htsEngine = (hts::CHtsSynthesizer*)&(dataManager->getWavSynthesizer());
                 hts::SynthCfg htsOut;
                 htsOut.outWavData = true;
                 htsOut.speedRate  = dataManager->getGlobalSetting().rate;
