@@ -26,7 +26,7 @@ The framework provides the support of dynamic module loading.  You can implement
 For example, the above left figure shows Concatenative Putonghua TTS engine running by specifying the "cmn.xml" as configuration input; while the above right figure shows HMM-based Chinese TTS engine running by specifying the "zh.xml" as configuration input.
 
 
-### Support of Multilingual TTS Enging
+### Support of Multilingual TTS Engine
 
 You can implement different TTS engines for different languages by overriding the TTSBase moduels in cst::tts::base::*.  The following figure depicts the multilingual support of the architecture.
 
